@@ -47,5 +47,3 @@ buttons.forEach(button => {
     cartNode.textContent = cart
   })
 })
-  </div>
-`
