@@ -1,7 +1,6 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
 
 const items = [
   { name: 'Red car 🚘', price: 100 },
@@ -12,26 +11,7 @@ let cart = 0
 
 document.querySelector('#app').innerHTML = `
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
     <h1>Micro Online Store 🏪</h1>
-<<<<<<< Updated upstream
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
-
-setupCounter(document.querySelector('#counter'))
-=======
-
     <h2>
     Cart 🛒 <span id="cart">${cart}</span>
     </h2>
@@ -67,4 +47,5 @@ buttons.forEach(button => {
     cartNode.textContent = cart
   })
 })
->>>>>>> Stashed changes
+  </div>
+`
